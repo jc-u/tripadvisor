@@ -1,0 +1,203 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	width: 1136px;
+	margin: 0 auto;
+	font-family: TS-Reg, sans-serif;
+	font-size: 16px;
+}
+
+header {
+	display: flex;
+	justify-content: space-between;
+
+	height: 60px;
+}
+
+header img {
+	width: 188px;
+}
+
+header nav {
+	display: flex;
+	width: 444px;
+	justify-content: space-between;
+	align-items: center;
+	padding: 20px 0;
+}
+
+header nav i {
+	margin-right: 10px;
+	color: black;
+}
+
+header nav a {
+	color: black;
+	text-decoration: none;
+	font-family: TS-Med, sans-serif;
+	transition: all 0.3s ease-in-out;
+}
+
+header nav a:hover {
+	background-color: #efefef;
+	padding: 10px;
+	border-radius: 15px;
+}
+
+header nav button {
+	width: 148px;
+	height: 40px;
+	border-radius: 20px;
+	background-color: black;
+	color: white;
+	border: none;
+	font-family: TS-Med, sans-serif;
+	transition: all 0.3s ease-in-out;
+}
+
+header nav button:hover {
+	background-color: #333333;
+}
+
+main {
+	margin-top: 32px;
+}
+
+h1 {
+	font-size: 54px;
+	font-family: TS-Med, sans-serif;
+}
+
+h1 span {
+	color: #ff5d5d;
+}
+
+.navigation {
+	margin: 30px auto 20px;
+	display: flex;
+	justify-content: space-between;
+}
+
+.navigation .block {
+	width: 181px;
+	height: 68px;
+	border: solid 1.5px black;
+	border-radius: 10px;
+	font-family: TS-Med, sans-serif;
+	padding: 11px 16px;
+	display: flex;
+	justify-content: space-between;
+	transition: all 0.3s ease-in-out;
+}
+
+.navigation .block:hover {
+	background-color: black;
+	color: white;
+}
+
+.navigation .block:hover i {
+	color: white;
+}
+
+.navigation .block i {
+	width: 24px;
+	color: black;
+}
+
+.photos {
+	display: flex;
+	height: 430px;
+}
+
+.photos img {
+	width: 115%;
+	object-fit: cover;
+	transition: all 0.3s ease-in-out;
+}
+
+.photos img:hover {
+	opacity: 0.8;
+}
+
+.photos .column img {
+	height: 214px;
+	object-fit: cover;
+	width: 480px;
+}
+
+.fil-ariane {
+	margin: 20px 0 40px;
+	font-size: 12px;
+}
+
+.fil-ariane a {
+	text-decoration: none;
+	color: black;
+	transition: all 0.3s ease-in-out;
+}
+
+.fil-ariane a:hover {
+	text-decoration: underline;
+}
+
+.fil-ariane span {
+	margin: 0 5px;
+}
+
+.description {
+	display: flex;
+	justify-content: space-between;
+}
+
+.description h2 {
+	font-size: 28px;
+	font-family: TS-Med, sans-serif;
+}
+
+.description p {
+	margin: 30px 0 50px;
+	width: 568px;
+}
+
+.carte {
+	width: 354px;
+}
+
+.carte .text {
+	background-color: #ff5d5d;
+	border-radius: 10px 10px 0 0px;
+}
+
+.carte img {
+	width: 354px;
+	border-radius: 0 0 10px 10px;
+}
+
+.carte h3 {
+	font-size: 24px;
+	font-family: TS-Reg, sans-serif;
+	padding: 20px;
+	width: 90%;
+}
+
+.carte p {
+	font-size: 12px;
+	font-family: TS-Reg, sans-serif;
+	margin: 0 20px;
+	width: 90%;
+}
+
+.carte button {
+	width: 130px;
+	height: 40px;
+	border-radius: 15px;
+	background-color: #333333;
+	color: white;
+	border: none;
+	font-family: TS-Med, sans-serif;
+	margin: 20px;
+}
