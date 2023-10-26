@@ -4,301 +4,393 @@
 	box-sizing: border-box;
 }
 
-body {
-	width: 1136px;
-	margin: 0 auto;
-	font-family: TS-Reg, sans-serif;
-	font-size: 16px;
+@media (max-width: 1184px) {
+	body {
+		width: 1136px;
+		margin: 0 auto;
+		font-family: TS-Reg, sans-serif;
+		font-size: 16px;
+	}
+
+	header {
+		display: flex;
+		justify-content: space-between;
+
+		height: 60px;
+	}
+
+	header img {
+		width: 188px;
+	}
+
+	header nav {
+		display: flex;
+		width: 444px;
+		justify-content: space-between;
+		align-items: center;
+		padding: 20px 0;
+	}
+
+	header nav i {
+		margin-right: 10px;
+		color: black;
+	}
+
+	header nav a {
+		color: black;
+		text-decoration: none;
+		font-family: TS-Med, sans-serif;
+		transition: all 0.3s ease-in-out;
+	}
+
+	header nav a:hover {
+		background-color: #efefef;
+		padding: 10px;
+		border-radius: 15px;
+	}
+
+	header nav button {
+		width: 148px;
+		height: 40px;
+		border-radius: 20px;
+		background-color: black;
+		color: white;
+		border: none;
+		font-family: TS-Med, sans-serif;
+		transition: all 0.3s ease-in-out;
+	}
+
+	header nav button:hover {
+		background-color: #333333;
+	}
+
+	main {
+		margin-top: 32px;
+	}
+
+	h1 {
+		font-size: 54px;
+		font-family: TS-Med, sans-serif;
+	}
+
+	h3 {
+		font-size: 24px;
+		font-family: TS-Reg, sans-serif;
+	}
+
+	h2 {
+		font-size: 28px;
+		font-family: TS-Med, sans-serif;
+	}
+
+	h4 {
+		font-size: 18px;
+		font-family: TS-Med, sans-serif;
+	}
+
+	h1 span {
+		color: #ff5d5d;
+	}
+
+	.navigation {
+		margin: 30px auto 20px;
+		display: flex;
+		justify-content: space-between;
+	}
+
+	.navigation .block {
+		width: 181px;
+		height: 68px;
+		border: solid 1.5px black;
+		border-radius: 10px;
+		font-family: TS-Med, sans-serif;
+		padding: 11px 16px;
+		display: flex;
+		justify-content: space-between;
+		transition: all 0.3s ease-in-out;
+	}
+
+	.navigation .block:hover {
+		background-color: black;
+		color: white;
+	}
+
+	.navigation .block:hover i {
+		color: white;
+	}
+
+	.navigation .block i {
+		width: 24px;
+		color: black;
+	}
+	.navigation .block:nth-child(6),
+	.navigation .block:nth-child(7) {
+		display: none;
+	}
+
+	.photos {
+		display: flex;
+		height: 430px;
+	}
+
+	.photos img {
+		width: 115%;
+		object-fit: cover;
+		transition: all 0.3s ease-in-out;
+	}
+
+	.photos img:hover {
+		opacity: 0.8;
+	}
+
+	.photos .column img {
+		height: 214px;
+		object-fit: cover;
+		width: 480px;
+	}
+
+	.fil-ariane {
+		margin: 20px 0 40px;
+		font-size: 12px;
+	}
+
+	.fil-ariane a {
+		text-decoration: none;
+		color: black;
+		transition: all 0.3s ease-in-out;
+	}
+
+	.fil-ariane a:hover {
+		text-decoration: underline;
+	}
+
+	.fil-ariane span {
+		margin: 0 5px;
+	}
+
+	.description {
+		display: flex;
+		justify-content: space-between;
+	}
+
+	.description p {
+		margin: 30px 0 50px;
+		width: 568px;
+	}
+
+	.carte {
+		width: 354px;
+	}
+
+	.carte h3 {
+		padding: 20px;
+		width: 90%;
+	}
+
+	.carte .text {
+		background-color: #ff5d5d;
+		border-radius: 10px 10px 0 0px;
+	}
+
+	.carte img {
+		width: 354px;
+		border-radius: 0 0 10px 10px;
+	}
+
+	.carte p {
+		font-size: 12px;
+		font-family: TS-Reg, sans-serif;
+		margin: 0 20px;
+		width: 90%;
+	}
+
+	.carte button {
+		width: 130px;
+		height: 40px;
+		border-radius: 15px;
+		background-color: #333333;
+		color: white;
+		border: none;
+		font-family: TS-Med, sans-serif;
+		margin: 20px;
+	}
+
+	.immanquables h2 {
+		margin-top: 40px;
+	}
+
+	.immanquables .caroussel {
+		display: flex;
+		margin: 20px 0;
+		overflow: hidden;
+		scroll-snap-type: x mandatory;
+		overflow-x: scroll;
+		-webkit-overflow-scrolling: touch;
+		scroll-behavior: smooth; /* Contrôle le comportement du scroll */
+		scroll-snap-align: start;
+	}
+
+	.immanquables .group {
+		display: flex;
+	}
+
+	.immanquables .group .lieux {
+		margin-top: 20px;
+		width: 100%;
+	}
+
+	.immanquables .group .lieux p {
+		margin: 20px 0;
+		width: 272px;
+	}
+
+	.immanquables .group .lieux a {
+		margin: 20px 0 40px;
+		font-size: 12px;
+	}
+
+	.immanquables .group .lieux a {
+		color: black;
+		transition: all 0.3s ease-in-out;
+	}
+
+	.immanquables .group .lieux a:hover {
+		opacity: 0.6;
+	}
+
+	.immanquables .group .lieux a span {
+		margin: 0 5px;
+	}
+
+	.immanquables .caroussel-container {
+		display: flex;
+		scroll-snap-type: x mandatory;
+	}
+
+	.immanquables .caroussel-container img {
+		width: 269px;
+		object-fit: cover;
+		margin-right: 15px;
+	}
+
+	.immanquables .caroussel-container .caroussel-item {
+		position: relative;
+		transition: all 0.3s ease-in-out;
+		z-index: 1;
+	}
+	.immanquables .caroussel-container .caroussel-item a {
+		text-decoration: none;
+		cursor: pointer;
+	}
+	.immanquables .caroussel-container .caroussel-item:hover img {
+		opacity: 0.8;
+	}
+	.immanquables .caroussel-container .caroussel-item:hover h4 {
+		opacity: 0.8;
+	}
+	.immanquables .caroussel-container .caroussel-item:hover h4 {
+		text-decoration: underline;
+	}
+
+	.immanquables .caroussel-container .caroussel-item h4 {
+		margin: 10px 0;
+	}
+	.immanquables .caroussel-container .caroussel-item p {
+		font-size: 14px;
+		color: #333333;
+		text-decoration: none;
+	}
+	.immanquables .caroussel-container .caroussel-item i {
+		position: absolute;
+		top: 5%;
+		right: 10%;
+		z-index: 2;
+		cursor: pointer;
+	}
 }
 
-header {
-	display: flex;
-	justify-content: space-between;
+@media (max-width: 1024px) {
+	body {
+		width: 95%;
+		margin: 0 auto;
+	}
 
-	height: 60px;
-}
+	.navigation {
+		flex-wrap: wrap;
+		height: 150px;
+	}
 
-header img {
-	width: 188px;
-}
+	.navigation .block {
+		width: 236.5px;
+	}
 
-header nav {
-	display: flex;
-	width: 444px;
-	justify-content: space-between;
-	align-items: center;
-	padding: 20px 0;
-}
+	.navigation .block:nth-child(6),
+	.navigation .block:nth-child(7) {
+		display: flex;
+	}
 
-header nav i {
-	margin-right: 10px;
-	color: black;
-}
+	.photos {
+		height: 372px;
+	}
 
-header nav a {
-	color: black;
-	text-decoration: none;
-	font-family: TS-Med, sans-serif;
-	transition: all 0.3s ease-in-out;
-}
+	.photos .column img {
+		height: 185px;
+		width: 402px;
+	}
 
-header nav a:hover {
-	background-color: #efefef;
-	padding: 10px;
-	border-radius: 15px;
-}
+	.immanquables .group .lieux p {
+		width: 232px;
+	}
 
-header nav button {
-	width: 148px;
-	height: 40px;
-	border-radius: 20px;
-	background-color: black;
-	color: white;
-	border: none;
-	font-family: TS-Med, sans-serif;
-	transition: all 0.3s ease-in-out;
+	.caroussel .caroussel-container .caroussel-item img {
+		width: 229px;
+	}
 }
 
-header nav button:hover {
-	background-color: #333333;
-}
+@media (max-width: 768px) {
+	header nav {
+		justify-content: end;
+	}
+	header nav a {
+		color: white;
+		width: 60px;
+		display: block;
+	}
 
-main {
-	margin-top: 32px;
-}
+	header nav i {
+		font-size: 24px;
+	}
+	.navigation .block {
+		width: 172.5px;
+	}
 
-h1 {
-	font-size: 54px;
-	font-family: TS-Med, sans-serif;
-}
+	.photos {
+		height: 276px;
+	}
+	.photos img {
+		width: 155%;
+		height: 276px;
+	}
 
-h3 {
-	font-size: 24px;
-	font-family: TS-Reg, sans-serif;
-}
+	.photos .column img {
+		height: 137px;
+		width: 239px;
+		margin-left: 5px;
+	}
 
-h2 {
-	font-size: 28px;
-	font-family: TS-Med, sans-serif;
-}
+	.description {
+		width: 100%;
+		display: block;
+	}
+	.description .a-propos p {
+		width: 100%;
+	}
 
-h4 {
-	font-size: 18px;
-	font-family: TS-Med, sans-serif;
-}
+	.carte {
+		margin: 0 auto;
+	}
 
-h1 span {
-	color: #ff5d5d;
-}
-
-.navigation {
-	margin: 30px auto 20px;
-	display: flex;
-	justify-content: space-between;
-}
-
-.navigation .block {
-	width: 181px;
-	height: 68px;
-	border: solid 1.5px black;
-	border-radius: 10px;
-	font-family: TS-Med, sans-serif;
-	padding: 11px 16px;
-	display: flex;
-	justify-content: space-between;
-	transition: all 0.3s ease-in-out;
-}
-
-.navigation .block:hover {
-	background-color: black;
-	color: white;
-}
-
-.navigation .block:hover i {
-	color: white;
-}
-
-.navigation .block i {
-	width: 24px;
-	color: black;
-}
-
-.photos {
-	display: flex;
-	height: 430px;
-}
-
-.photos img {
-	width: 115%;
-	object-fit: cover;
-	transition: all 0.3s ease-in-out;
-}
-
-.photos img:hover {
-	opacity: 0.8;
-}
-
-.photos .column img {
-	height: 214px;
-	object-fit: cover;
-	width: 480px;
-}
-
-.fil-ariane {
-	margin: 20px 0 40px;
-	font-size: 12px;
-}
-
-.fil-ariane a {
-	text-decoration: none;
-	color: black;
-	transition: all 0.3s ease-in-out;
-}
-
-.fil-ariane a:hover {
-	text-decoration: underline;
-}
-
-.fil-ariane span {
-	margin: 0 5px;
-}
-
-.description {
-	display: flex;
-	justify-content: space-between;
-}
-
-.description p {
-	margin: 30px 0 50px;
-	width: 568px;
-}
-
-.carte {
-	width: 354px;
-}
-
-.carte h3 {
-	padding: 20px;
-	width: 90%;
-}
-
-.carte .text {
-	background-color: #ff5d5d;
-	border-radius: 10px 10px 0 0px;
-}
-
-.carte img {
-	width: 354px;
-	border-radius: 0 0 10px 10px;
-}
-
-.carte p {
-	font-size: 12px;
-	font-family: TS-Reg, sans-serif;
-	margin: 0 20px;
-	width: 90%;
-}
-
-.carte button {
-	width: 130px;
-	height: 40px;
-	border-radius: 15px;
-	background-color: #333333;
-	color: white;
-	border: none;
-	font-family: TS-Med, sans-serif;
-	margin: 20px;
-}
-
-.immanquables h2 {
-	margin-top: 40px;
-}
-
-.immanquables .caroussel {
-	display: flex;
-	margin: 20px 0;
-	overflow: hidden;
-	scroll-snap-type: x mandatory;
-	overflow-x: scroll;
-	-webkit-overflow-scrolling: touch;
-	scroll-behavior: smooth; /* Contrôle le comportement du scroll */
-	scroll-snap-align: start;
-}
-
-.immanquables .group {
-	display: flex;
-}
-
-.immanquables .group .lieux {
-	margin-top: 20px;
-	width: 100%;
-}
-
-.immanquables .group .lieux p {
-	margin: 20px 0;
-	width: 272px;
-}
-
-.immanquables .group .lieux a {
-	margin: 20px 0 40px;
-	font-size: 12px;
-}
-
-.immanquables .group .lieux a {
-	color: black;
-	transition: all 0.3s ease-in-out;
-}
-
-.immanquables .group .lieux a:hover {
-	opacity: 0.6;
-}
-
-.immanquables .group .lieux a span {
-	margin: 0 5px;
-}
-
-.immanquables .caroussel-container {
-	display: flex;
-	scroll-snap-type: x mandatory;
-}
-
-.immanquables .caroussel-container img {
-	width: 269px;
-	object-fit: cover;
-	margin-right: 15px;
-}
-
-.immanquables .caroussel-container .caroussel-item {
-	position: relative;
-	transition: all 0.3s ease-in-out;
-	z-index: 1;
-}
-.immanquables .caroussel-container .caroussel-item a {
-	text-decoration: none;
-	cursor: pointer;
-}
-.immanquables .caroussel-container .caroussel-item:hover img {
-	opacity: 0.8;
-}
-.immanquables .caroussel-container .caroussel-item:hover h4 {
-	opacity: 0.8;
-}
-.immanquables .caroussel-container .caroussel-item:hover h4 {
-	text-decoration: underline;
-}
-
-.immanquables .caroussel-container .caroussel-item h4 {
-	margin: 10px 0;
-}
-.immanquables .caroussel-container .caroussel-item p {
-	font-size: 14px;
-	color: #333333;
-	text-decoration: none;
-}
-.immanquables .caroussel-container .caroussel-item i {
-	position: absolute;
-	top: 5%;
-	right: 10%;
-	z-index: 2;
-	cursor: pointer;
+	.caroussel .caroussel-container .caroussel-item img {
+		width: 189px;
+	}
 }
