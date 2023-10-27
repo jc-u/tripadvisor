@@ -29,7 +29,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
 		console.log(data);
 
-		const backendURL = "site--tripadvisor-backend--ltvfvlfs59v4.code.run";
+		const backendURL = "site--tripadvisor-backend--ltvfvlfs59v4.code.run/form";
 
 		const response = await axios.post(backendURL, data);
 		console.log(response);
