@@ -29,12 +29,10 @@ document.addEventListener("DOMContentLoaded", () => {
 
 		console.log(data);
 
-		const backendURL = "";
+		const backendURL =
+			"https://1343-2a01-e0a-576-6060-8808-3fa5-ebf8-63d7.ngrok-free.app/form";
 
-		const response = await axios.post(
-			"https://1343-2a01-e0a-576-6060-8808-3fa5-ebf8-63d7.ngrok-free.app",
-			data
-		);
+		const response = await axios.post(backendURL, data);
 		console.log(response);
 	});
 });
